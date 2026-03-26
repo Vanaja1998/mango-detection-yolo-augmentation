@@ -3,31 +3,31 @@ This study systematically evaluates the impact of dataset augmentation on the pe
 
 The models evaluated include:
 
-YOLOv5
-YOLOv8
-YOLOv9
-YOLOv10
-YOLO11
+YOLOv5,
+YOLOv8,
+YOLOv9,
+YOLOv10,
+YOLO11,
 YOLO12
 # Dataset Description
-Total Images: 516 RGB images
-Mango Variety: Pusa Mallika
-Image Sources: Mobile and digital cameras
-Conditions: Natural orchard environments with varying lighting
+-Total Images: 516 RGB images
+-Mango Variety: Pusa Mallika
+-Image Sources: Mobile and digital cameras
+-Conditions: Natural orchard environments with varying lighting
 # Annotation
-Tool used: LabelImg
-Format: YOLO annotation format
-Image size: Resized to 640 × 640 pixels
+-Tool used: LabelImg
+-Format: YOLO annotation format
+-Image size: Resized to 640 × 640 pixels
 # Dataset Configurations
 Three dataset variants were created to evaluate augmentation impact:
-D1: Original dataset
-D2: 1× augmented dataset
-D3: 2× augmented dataset
+-D1: Original dataset
+-D2: 1× augmented dataset
+-D3: 2× augmented dataset
 # Data Split
 Each dataset was split into:
-Training: 80%
-Validation: 10%
-Testing: 10%
+-Training: 80%
+-Validation: 10%
+-Testing: 10%
 # Experimental Setup
 Each YOLO model was trained independently on all dataset configurations
 Three replications were conducted using different random seeds
