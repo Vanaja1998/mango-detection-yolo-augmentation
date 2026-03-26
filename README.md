@@ -14,6 +14,12 @@ YOLO12
 -Mango Variety: Pusa Mallika<br>
 -Image Sources: Mobile and digital cameras<br>
 -Conditions: Natural orchard environments with varying lighting<br>
+# Dataset Availability
+
+The dataset is not publicly released. However, it can be made available upon reasonable request for academic and research purposes.<br>
+
+Please contact the author for access.
+
 # Annotation
 -Tool used: LabelImg<br>
 -Format: YOLO annotation format<br>
@@ -84,8 +90,21 @@ for seed in seeds:
 ```
 
 ---
+# Statistical Analysis
 
-## 📜 License and Acknowledgment
+To rigorously evaluate the impact of dataset augmentation and model architecture, statistical analysis was performed using Python.
+
+* A two-way ANOVA was conducted to assess the main and interaction effects
+* Tukey’s HSD post hoc test was applied for pairwise comparisons
+
+The complete implementation is available in:
+
+`anova_tukey_yolo.py`
+
+This script reproduces the statistical evaluation methodology described in the paper.
+
+
+# License and Acknowledgment
 
 We acknowledge and thank the developers of the Ultralytics YOLO framework for providing an open-source and well-maintained implementation.
 
