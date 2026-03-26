@@ -10,40 +10,40 @@ YOLOv10,
 YOLO11,
 YOLO12
 # Dataset Description
--Total Images: 516 RGB images
--Mango Variety: Pusa Mallika
--Image Sources: Mobile and digital cameras
--Conditions: Natural orchard environments with varying lighting
+-Total Images: 516 RGB images<br>
+-Mango Variety: Pusa Mallika<br>
+-Image Sources: Mobile and digital cameras<br>
+-Conditions: Natural orchard environments with varying lighting<br>
 # Annotation
--Tool used: LabelImg
--Format: YOLO annotation format
+-Tool used: LabelImg<br>
+-Format: YOLO annotation format<br>
 -Image size: Resized to 640 × 640 pixels
 # Dataset Configurations
-Three dataset variants were created to evaluate augmentation impact:
--D1: Original dataset
--D2: 1× augmented dataset
+Three dataset variants were created to evaluate augmentation impact:<br>
+-D1: Original dataset<br>
+-D2: 1× augmented dataset<br>
 -D3: 2× augmented dataset
 # Data Split
-Each dataset was split into:
--Training: 80%
--Validation: 10%
+Each dataset was split into:<br>
+-Training: 80%<br>
+-Validation: 10%<br>
 -Testing: 10%
 # Experimental Setup
-Each YOLO model was trained independently on all dataset configurations
-Three replications were conducted using different random seeds
-This ensures:
-Robustness
-Reproducibility
-Statistical reliability
+Each YOLO model was trained independently on all dataset configurations<br>
+Three replications were conducted using different random seeds<br>
+This ensures:<br>
+Robustness<br>
+Reproducibility<br>
+Statistical reliability<br>
 ## Implementation Details
 
-This work utilizes the official implementation provided by the Ultralytics YOLO framework.
+This work utilizes the official implementation provided by the Ultralytics YOLO framework.<br>
 
-* Framework: Ultralytics YOLO
-* Source: https://github.com/ultralytics/ultralytics
-* Usage: Models were trained using the built-in training pipeline without modification to the core source code
+* Framework: Ultralytics YOLO<br>
+* Source: https://github.com/ultralytics/ultralytics<br>
+* Usage: Models were trained using the built-in training pipeline without modification to the core source code<br>
 
-Customizations in this study include:
+Customizations in this study include:<br>
 
 * Dataset preparation and augmentation strategies
 * Model configuration selection (YOLOv5–YOLO12 variants)
