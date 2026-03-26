@@ -99,7 +99,7 @@ To rigorously evaluate the impact of dataset augmentation and model architecture
 
 The complete implementation is available in:
 
-`anova_tukey_yolo.py`
+`anova_tukey_yolo.ipynb`
 
 This script reproduces the statistical evaluation methodology described in the paper.
 
