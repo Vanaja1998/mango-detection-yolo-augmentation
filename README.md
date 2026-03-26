@@ -30,6 +30,8 @@ Each dataset was split into:<br>
 -Testing: 10%
 # Experimental Setup
 Each YOLO model was trained independently on all dataset configurations<br>
+YOLOv5 was implemented using its official GitHub repository, while the remaining models were trained using the Ultralytics package with a unified training pipeline to ensure consistency across experiments.<br>
+
 Three replications were conducted using different random seeds<br>
 This ensures:<br>
 Robustness<br>
@@ -63,7 +65,22 @@ pip install ultralytics
 ## 🚀 Training Command
 
 ```bash
-yolo detect train model=yolo11.yaml data=data.yaml epochs=100 imgsz=640 batch=16
+from ultralytics import YOLO
+
+seeds = [42, 123, 999]
+
+for seed in seeds:
+    model = YOLO("yolov8s.pt")
+    
+    results = model.train(
+        data="data/data.yaml",   # ✅ clean relative path
+        epochs=200,
+        imgsz=640,
+        batch=8,
+        seed=seed,
+        project="runs/train",
+        name=f"Mango_seed{seed}"
+    )
 ```
 
 ---
